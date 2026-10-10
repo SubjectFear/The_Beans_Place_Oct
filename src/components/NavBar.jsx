@@ -100,14 +100,14 @@ export default function NavBar({ toggleCart, theme, onToggleTheme }) {
     }, []); // [] means this effect runs once on mount and cleans up on unmount
 
     return (
+        // motion.header is a root element which is a third-party component from framer-motion
         <motion.header
             className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}
             initial={{ y:-80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             > 
-            {/* motion.header is a root element which is a third-party component from framer-motion*/}
-            <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3  md:px-8">
+            <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8">
                 {/* Brand */}
                 <a href="#home" className="brand">
                     <img 
@@ -165,7 +165,7 @@ export default function NavBar({ toggleCart, theme, onToggleTheme }) {
             {/* Mobile Nav */}
             <AnimatePresence>
                 {menuOpen && (
-                    <Motion.div
+                    <motion.div
                     className="overflow-hidden md:hidden"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
@@ -212,7 +212,7 @@ export default function NavBar({ toggleCart, theme, onToggleTheme }) {
                             </Button>
 
                         </nav>
-                    </Motion.div>
+                    </motion.div>
                 )}
             </AnimatePresence>
         </motion.header>
