@@ -34,8 +34,8 @@
 /* --- YOUR IMPORTS GO HERE --- */
 import { useEffect, useRef, useState } from "react";
 import imgRedSulawesi from "../assets/Red-Sulawesi-Bag.png";
-import imgUrigacheffe from "../assets/Urigacheffe-bag.png";
-import imgTanzaniaPeaberry from "../assets/Tanzania-Peaberry-bag.png";
+import imgUrigacheffe from "../assets/Urigacheffe-Bag.png";
+import imgTanzaniaPeaberry from "../assets/Tanzania-Peaberry-Bag.png";
 import imgPanamaGeisha from "../assets/Panama-Geisha.png";
 import imgVietnameserobusta from "../assets/Vietnamese-Robusta.png";
 import imgBrazilianSantos from "../assets/Brazilian-Santos-Bag.png";
@@ -229,4 +229,3 @@ return(
 );
 
 }
-

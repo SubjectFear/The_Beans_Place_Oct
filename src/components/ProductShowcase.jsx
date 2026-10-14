@@ -136,7 +136,7 @@ export default function ProductShowcase({ products = [], addToCart }) {
                 className="product-grid">
                     {products.map((product) => (
                         <StaggerItem key={product.name} animation="fadeUp">
-                            <motion.div
+                            <Motion.div
                                 className="product-card"
                                 whileHover={{ y: -8, transition: { duration: 0.25 } }}
                             >
@@ -171,7 +171,7 @@ export default function ProductShowcase({ products = [], addToCart }) {
                                         Add to cart
                                     </Button>
                                 </div>
-                            </motion.div>
+                            </Motion.div>
                         </StaggerItem>
                     ))}
             </StaggerContainer>
