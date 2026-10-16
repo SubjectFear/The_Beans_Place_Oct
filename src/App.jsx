@@ -36,7 +36,7 @@ import RibbonTicker from "./components/RibbonTicker";
 import FeaturesSection from "./components/FeaturesSection";
 import ProductShowcase from "./components/ProductShowcase";
 import CtaSection from "./components/CtaSection";
-
+import AboutSection from "./components/AboutSection";
 
 
 
@@ -219,12 +219,12 @@ export default function App() {
 
             {/* CTA */}
             <section className="bg-cta">
-                <CtaSection />
+            <CtaSection />
             </section>
 
             {/* About */}
             <section className="bg-cta" id="about">
-            
+            <AboutSection />
             </section>
 
             {/* Contact */}

@@ -187,7 +187,27 @@ export default function AboutSection() {
             </div>
 
             {/* Value Cards */}
-
+            <StaggerContainer staggerDelay={0.15} className="about-cards-grid">
+                {values.map((v) => (
+                    <StaggerItem key={v.title} animation="fadeUp">
+                        <Card glass className="about-value-card">
+                            <CardHeader>
+                               <span className="about-card-icon">{v.icon}</span>
+                               <h3 className="text-lg font-blod"
+                               style={{ color: "var(--cream)" }}
+                               >
+                                {v.title}
+                               </h3>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-sm leading-relaxed text-white/70">
+                                    {v.description}
+                                </p>
+                            </CardContent>
+                        </Card>
+                    </StaggerItem>
+                ))}
+            </StaggerContainer>
         </div>
-    )
+    );
 }
